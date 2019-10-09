@@ -15,6 +15,7 @@ body, html {
 .navbar-brand {
     margin: 0;
     padding: 0;
+    text-align: left;
     text-decoration: none;
     background-color: #5176a6;
     color: #fff;
@@ -23,12 +24,80 @@ body, html {
 
 .navbar-menu {
     text-align: right;
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
+    margin-right: 2px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .menu-item {
     color: #fff;
     text-decoration: none;
+    padding: 1px;
+    margin: 1px;
+}
+
+/*----------------packages container --------------------*/
+
+.callout-container {
+    height: 100vh;
+    background: url("images/2019-03-16%2010.46.38.jpg") no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.opaque-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+/*------------------ jumbotron -----------------*/
+.jumbotron {
+    background-color: #6f9abf;
+}
+.jumbotron-header {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.jumbotron .lead {
+    margin: 25px;
+    color: #d0d5df;
+}
+
+.jumbotron small {
+    font-size: 60%;
+    font-style: italic;
+    color: #d0d0d0;
+}
+
+/*--------------buttons---------------*/
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+}
+
+.btn--red {
+    color: white;
+    background-color: #5176a6;
+    border-color: #5176a6;
+}
+
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    background-color: #733646;
+    border-color: #6f9abf;
 }

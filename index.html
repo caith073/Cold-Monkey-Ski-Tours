@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en/US">
+<html lang="en-US">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="main.css" type="text/css" />
 	<title>ColdMonkey SkiTours</title>
@@ -11,41 +13,67 @@
 
 <body>
 	<nav class="navbar">
-		<a href="/" class="navbar-brand">ColdMonkey<br>SkiTours</a>
-
-				<ul class="navbar-menu">
-					<a class="menu-item" href="#">Transport</a>
-					<a class="menu-item" href="#">Accomodation</a>
-					<a class="menu-item" href="#">Facilities</a>
-					<a class="menu-item" href="#">Merchandise</a>
-					<a class="menu-item" href="#">Log In</a>
-				</ul>
-
+		<a href="#" class="navbar-brand">ColdMonkey<br>SkiTours</a>
+			<ul class="navbar-menu">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="menu-item" href="#">Transport</a>
+						<a class="menu-item" href="#">Accomodation</a>
+						<a class="menu-item" href="#">Facilities</a>
+						<a class="menu-item" href="#">Merchandise</a>
+						<a class="menu-item" href="#">Log In</a>
+					</div>
+				</li>
+			</ul>
 	</nav>
+	<div class="container-fluid callout-container">
+		<!--<div class="opaque-overlay"></div>-->
+		<div class="row">
+			<div class="col-12">
+				<section class="callout jumbotron text-center">
+					<h1 class="jumbotron-header">ColdSki offer a complete ski packages, for solo or group skiers!</h1>
+					<hr class="block-divider block-divider--blue">
+					<p class="lead ">Book all your ski passes and ski hire through our site links and get
+						<span class="d-inline d-sm-none "><br></span>
+						<strong><mark> a 1 hour FREE ski lesson!</mark></strong></p>
+					<button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
+					<p class="text-muted ">The free lesson is for all parties in your booking and used through ecole
+						ski, non-transferable</p>
+				</section>
+			</div>
+		</div>
+	</div>
 
 	<!--package and location information-->
-	<section1>
-		<h3>Solo Package</h3>
-		<p>For the Solo Skier, as standard - Flights/Transfers/Accomodation/Ski Pass. Optional Ski Hire and Ski Lessons
-			can be selected through the account page.</p>
-		<h3>Small Group</h3>
-		<p>Up to 5 people, as standard - Flights/Transfers/Accomodation/Ski Pass. Optional Ski Hire and Ski Lessons can
-			be selected through the account page.</p>
-		<h3>Large Group</h3>
-		<p>5 and over, as standard - Flights/Transfers/Accomodation/Ski Pass. Optional Ski Hire and Ski Lessons can be
-			selected through the account page.</p>
-		</section>
-		<section2>
-			<h3>Avoriaz</h3>
-			<p>As the highest resort in the porte du soliel, Avoriaz has runs to suit all levels. Famous for the 'Swiss
-				Wall' one of the worlds steepest runs,</p>
-			<h3>Morzine</h3>
-			<p>Nestled in the valley below Avoriaz is the town of Morzine. Sitting between Avoriaz and Les Gets, the
-				town of Morzine has ski in/out and great restaurants.</p>
-			<h3>Les Gets</h3>
-			<p>Les Gets sits at the beginning of the valley. The town is quieter than Morzine and the skiing runs more
-				blue/reds ideal for family</p>
+	<div class="features-container">
+		<section1 class="features">
+			<h3>Solo Package</h3>
+			<p>For the Solo Skier, as standard - Flights/Transfers/Accomodation/Ski Pass. Optional Ski Hire and Ski
+				Lessons
+				can be selected through the account page.</p>
+			<h3>Small Group</h3>
+			<p>Up to 5 people, as standard - Flights/Transfers/Accomodation/Ski Pass. Optional Ski Hire and Ski Lessons
+				can
+				be selected through the account page.</p>
+			<h3>Large Group</h3>
+			<p>5 and over, as standard - Flights/Transfers/Accomodation/Ski Pass. Optional Ski Hire and Ski Lessons can
+				be
+				selected through the account page.</p>
 			</section>
+	</div>>
+	<section2>
+		<h3>Avoriaz</h3>
+		<p>As the highest resort in the porte du soliel, Avoriaz has runs to suit all levels. Famous for the 'Swiss
+			Wall' one of the worlds steepest runs,</p>
+		<h3>Morzine</h3>
+		<p>Nestled in the valley below Avoriaz is the town of Morzine. Sitting between Avoriaz and Les Gets, the
+			town of Morzine has ski in/out and great restaurants.</p>
+		<h3>Les Gets</h3>
+		<p>Les Gets sits at the beginning of the valley. The town is quieter than Morzine and the skiing runs more
+			blue/reds ideal for family</p>
+		</section>
 </body>
 
 </html>
