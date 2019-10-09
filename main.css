@@ -4,20 +4,37 @@ body, html {
     font-family: "Roboto", sans-serif;
 }
 
-h2 {
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    text-decoration: none;
     background-color: #5176a6;
     color: #fff;
     position: relative;
 }
 /*------------- title and menu styling --------------*/
-ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 2px;
-    padding: 2px;
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: #5176a6;
 }
 
-li {
-    background-color: #5176a6;
+nav.menu {
+    text-decoration: none;
+    text-align: right;
+    width: 100%;
+}
+
+.navbar-nav {
+    padding-left: 0;
+    position: relative;
+    list-style: none;
+}
+
+.menu-item {
     color: #fff;
+    text-decoration: none;
 }
