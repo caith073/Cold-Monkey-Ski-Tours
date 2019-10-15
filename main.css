@@ -4,38 +4,69 @@ body, html {
     font-family: "Roboto", sans-serif;
 }
 /*------------- title and menu styling --------------*/
-
-.navbar {
-    margin-bottom: 0;
-    border: 0;
-    width: 100%;
+.topnav {
     background-color: #5176a6;
+    overflow: hidden;
+    height: ;
 }
-
 .navbar-brand {
     margin: 0;
     padding: 0;
+}
+.topnav li {
+  float: left;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav li:hover {
+  background-color: #d0d5d9;
+  color: black;
+}
+.topnav li.active {
+  background-color: #733646;
+  color: white;
+}
+.topnav-right {
+  float: right;
+}
+
+@media (max-width:767px) {
+    .mobile {
+        background-color: #5176a6;
+    }
+.topnav a {
+    float: right;
     text-align: left;
-    text-decoration: none;
-    background-color: #5176a6;
-    color: #fff;
-    position: relative;
+    display: none;
 }
-
-.navbar-menu {
-    text-align: right;
-    margin-right: 2px;
-    margin-top: 0;
-    margin-bottom: 0;
+.nav-icon {
+    margin: 1em;
+    width: 40px;
 }
-
-.menu-item {
-    color: #fff;
-    text-decoration: none;
-    padding: 1px;
-    margin: 1px;
+.nav-icon::after,
+.nav-icon::before,
+.nav-icon div {
+    background-color: #fff;
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 7px 0;
+    transition: all .2s ease-in-out;
 }
-
+.nav-icon:hover::before {
+    transform: translateY(12px) rotate(135deg)
+}
+.nav-icon:hover::after {
+    transform: translateY(-12px) rotate(-135deg)
+}
+.nav-icon:hover div {
+    transform: scale(0);
+}
+}
 /*----------------packages container --------------------*/
 
 .callout-container {
