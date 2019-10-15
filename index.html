@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="main.css" type="text/css" />
 	<title>ColdMonkey SkiTours</title>
@@ -13,84 +15,77 @@
 
 <body>
 	<div class="topnav">
-		<div class="topnav-left">
-			<div class="navbar-brand">
-				<img src="cmlogoreverse231px53px.png" alt="ColdMonkey";>
-		    </div>
-			<div class="topnav-right">
-				<div class="nav-icon">
-					<div class="nav-toggle">
-						<li class="dropdown-item">Transport</li>
-						<li class="dropdown-item">Local Info</li>
-						<li class="dropdown-item">Ski Hire</li>
-						<li class="dropdown-item">SKi Shop</li>
-						<li class="dropdown-item">Log In</li>
-					</div>
+		<div class="navbar-brand">
+			<img src="cmlogoreverse231px53px.png" alt="ColdMonkey";>
+		</div>
+			<div class="nav-toggle">
+				<a href="#signin" class="active">Sign In</a>
+				<a href="#transport">Transport</li>
+					<a href="#localinfo">Local Info</li>
+						<a href="#skihire">Ski Hire</li>
+							<a href="#skishop">Ski Shop</li>
+			</div>
+			<nav class="nav-icon">
+				<div></div>
+				<div></div>
+				<div></div>
+			</nav>
+		</div>
+		<div class="container-fluid callout-container">
+			<!--<div class="opaque-overlay"></div>-->
+			<div class="row">
+				<div class="col-12">
+					<section class="callout jumbotron text-center">
+						<h1 class="jumbotron-header">ColdSki offer a complete ski packages, for solo or group
+							skiers!
+						</h1>
+						<hr class="block-divider block-divider--blue">
+						<p class="lead ">Book all your ski passes and ski hire through our site links and get
+							<span class="d-inline d-sm-none "><br></span>
+							<strong><mark> a 1 hour FREE ski lesson!</mark></strong></p>
+						<button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
+						<p class="text-muted ">The free lesson is for all parties in your booking and used through
+							ecole
+							ski, non-transferable</p>
+					</section>
 				</div>
 			</div>
 		</div>
-	</div>
 
-
-
-
-
-
-	<div class="container-fluid callout-container">
-		<!--<div class="opaque-overlay"></div>-->
-		<div class="row">
-			<div class="col-12">
-				<section class="callout jumbotron text-center">
-					<h1 class="jumbotron-header">ColdSki offer a complete ski packages, for solo or group
-						skiers!
-					</h1>
-					<hr class="block-divider block-divider--blue">
-					<p class="lead ">Book all your ski passes and ski hire through our site links and get
-						<span class="d-inline d-sm-none "><br></span>
-						<strong><mark> a 1 hour FREE ski lesson!</mark></strong></p>
-					<button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
-					<p class="text-muted ">The free lesson is for all parties in your booking and used through
-						ecole
-						ski, non-transferable</p>
+		<!--package and location information-->
+		<div class="features-container">
+			<section1 class="features">
+				<h3>Solo Package</h3>
+				<p>For the Solo Skier, as standard - Flights/Transfers/Accomodation/Ski Pass. Optional Ski Hire and
+					Ski
+					Lessons
+					can be selected through the account page.</p>
+				<h3>Small Group</h3>
+				<p>Up to 5 people, as standard - Flights/Transfers/Accomodation/Ski Pass. Optional Ski Hire and Ski
+					Lessons
+					can
+					be selected through the account page.</p>
+				<h3>Large Group</h3>
+				<p>5 and over, as standard - Flights/Transfers/Accomodation/Ski Pass. Optional Ski Hire and Ski
+					Lessons
+					can
+					be
+					selected through the account page.</p>
 				</section>
-			</div>
-		</div>
-	</div>
-
-	<!--package and location information-->
-	<div class="features-container">
-		<section1 class="features">
-			<h3>Solo Package</h3>
-			<p>For the Solo Skier, as standard - Flights/Transfers/Accomodation/Ski Pass. Optional Ski Hire and
-				Ski
-				Lessons
-				can be selected through the account page.</p>
-			<h3>Small Group</h3>
-			<p>Up to 5 people, as standard - Flights/Transfers/Accomodation/Ski Pass. Optional Ski Hire and Ski
-				Lessons
-				can
-				be selected through the account page.</p>
-			<h3>Large Group</h3>
-			<p>5 and over, as standard - Flights/Transfers/Accomodation/Ski Pass. Optional Ski Hire and Ski
-				Lessons
-				can
-				be
-				selected through the account page.</p>
+		</div>>
+		<section2>
+			<h3>Avoriaz</h3>
+			<p>As the highest resort in the porte du soliel, Avoriaz has runs to suit all levels. Famous for the
+				'Swiss
+				Wall' one of the worlds steepest runs,</p>
+			<h3>Morzine</h3>
+			<p>Nestled in the valley below Avoriaz is the town of Morzine. Sitting between Avoriaz and Les Gets, the
+				town of Morzine has ski in/out and great restaurants.</p>
+			<h3>Les Gets</h3>
+			<p>Les Gets sits at the beginning of the valley. The town is quieter than Morzine and the skiing runs
+				more
+				blue/reds ideal for family</p>
 			</section>
-	</div>>
-	<section2>
-		<h3>Avoriaz</h3>
-		<p>As the highest resort in the porte du soliel, Avoriaz has runs to suit all levels. Famous for the
-			'Swiss
-			Wall' one of the worlds steepest runs,</p>
-		<h3>Morzine</h3>
-		<p>Nestled in the valley below Avoriaz is the town of Morzine. Sitting between Avoriaz and Les Gets, the
-			town of Morzine has ski in/out and great restaurants.</p>
-		<h3>Les Gets</h3>
-		<p>Les Gets sits at the beginning of the valley. The town is quieter than Morzine and the skiing runs
-			more
-			blue/reds ideal for family</p>
-		</section>
 </body>
 
 </html>
